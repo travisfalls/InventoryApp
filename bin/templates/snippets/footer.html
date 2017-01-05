@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head></head>
+<body>
+	<div th:fragment="footer">
+		<hr />
+		&copy; <span th:text="${#dates.format(#dates.createNow(), 'yyyy')}">2016</span>
+		Inventory App
+	</div>
+</body>
+</html>
